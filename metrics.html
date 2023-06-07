@@ -2,20 +2,21 @@
 <html>
 
 <head>
-    <title>BMI Calculator</title>
+    <title>Adult BMI Calculator</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/metrics.css">
     <script src="bmi_js.js"></script>
 </head>
 
 <body>
-      <!-- navbar begins here-->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- navbar begins here-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">Adult BMI Calc</a>
+            <a class="navbar-brand" href="/">Adult Body Mass Index (BMI) Calculator</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -23,53 +24,100 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="/">Home</a>
+                        <a class="nav-link" aria-current="page" href="/english.html">English-Calculator</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="/">English</a>
+                        <a class="nav-link active" href="/metrics.html">Metrics-Calculator</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/metrics.html">Metrics</a>
-                    </li>
-                    
+
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+
             </div>
         </div>
     </nav>
-<!-- navbar ends here -->
-
-    <h1>BMI Healthy Weight Calculator</h1>
-    <hr>
-    <brk></brk>
-    <pre>
-            The Body Mass Index (BMI) is a measure that uses your height and
-            weight to work out if your weight is healthy.
-        </pre>
+    <!-- navbar ends here -->
 
 
+    <!-- header section begins here -->
+    <div class="container-fluid header d-flex align-items-center">
 
-    <!-- English version -->
-    <div class="container">
-        <div class="row mb-4">
+        <div class="row">
             <div class="col-10">
-                <label for="height">Height: </label>
-                <input type="text" id="height" />
-                <span class="error"></span>
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-10">
-                <label for="weight">Weight: </label>
-                <input type="text" id="weight" width="" />
-                <span class="error"></span>
+                <h1>BMI Healthy Weight Calculator</h1>
+                <p>The Body Mass Index (BMI) is a measure that uses your height and weight to work out if your weight is
+                    healthy.</p>
             </div>
         </div>
     </div>
+
+    <!-- header section ends here -->
+
+    <!-- BMI Calculation info -->
+    <section class="container bg-light bmi-section">
+        <div class="row justify-content-center">
+            <h3 class="col-11 text-center my-5">
+                BMI Healthy Weight Calculator in Metrics
+            </h3>
+            <form class="col-11" id="bmi-form">
+                <div class="row">
+                    <!-- <h6 class="col-11">Weight</h6> -->
+                    <!-- <div class="mb-3 col-6">
+                        <label for="stone" class="form-label">Stone</label>
+                        <input type="text" class="form-control" id="stone" aria-describedby="emailHelp">
+                        <div id="weightHelp" class="form-text">Enter your weight in <b>pounds (lbs)</b></div>
+                    </div> -->
+                    <div class="mb-3 col-6">
+                        <b class="col-11">Weight</b>
+                        <label for="weight" class="form-label">(Kilograms)</label>
+                        <input type="number" class="form-control" id="weight" step="0.1">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <!-- <h6 class="col-11">Height</h6> -->
+                    <div class="mb-3 col-6">
+                        <b class="col-11">Height</b>
+                        <label for="height" class="form-label">(Centimeters)</label>
+                        <input type="number" class="form-control" id="height" step="0.1" aria-describedby="feetHelp">
+                        <!-- <div id="weightHelp" class="form-text">Enter your weight in <b>pounds (lbs)</b></div> -->
+                    </div>
+                    <!-- <div class="mb-3 col-6">
+                        <label for="inches" class="form-label">Inches</label>
+                        <input type="text" class="form-control" id="inches">
+                    </div>                     -->
+                </div>
+
+                <button type="submit" class="btn btn-primary">Calculate</button>
+                <a href="english.html"
+                    class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Switch
+                    to english</a>
+            </form>
+        </div>
+
+
+        <!-- BMI RESULT -->
+        <div class="row mt-5 justify-content-center">
+            <div class="col-11 text-center">
+                <h6>
+                    Result: <br>
+                </h6>
+                <span>BMI: </span>
+                <strong id="bmi-result" style="font-size: 32px"> </strong>
+
+                <h6>
+                    Recommendation:
+                </h6>
+
+                <p class="bmi-recommendation" id="recommendation">
+                    <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quisquam earum adipisci eligendi a similique possimus ducimus accusantium minus neque? -->
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+    <script src="js/metrics.js"></script>
 
 </body>
 
