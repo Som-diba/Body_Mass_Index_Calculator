@@ -3,6 +3,12 @@
 
 This is a Body Mass Index (BMI) Calculator. The Body Mass Index of an individual is a numerial value or measure that uses the height and the weight to work out and access whether the individual has a healthy body weight relative to their height.
 
+**The Home Page**
+
+The home page houses the navigation section (English-calculator, Metrics-Calculator, Cunsulting, Fitness Planning, Meal Planning ) the calcutalator, the consulting section, Fitness Planning section, Meal Planning section and Contact us section.
+
+Clicking on these various options takes you to their different pages where different information with regards to the page name can be gotten.
+
 **Who can use the calculator**
 
 The BMI calculator is suitable for adults from 18 years old and over.
@@ -12,7 +18,9 @@ The output of this calculator returns a result and tell if you are underweight, 
 A BMI:
 1. below 18.5 is underweight
 2. equal to 18.5 or less than 24.9 is healthy
-3. equal to 25 or less than 29.9 is overweight
+3
+
+. equal to 25 or less than 29.9 is overweight
 4. of 30 or over is obese
 
 **How the BMI is calculated**
@@ -37,3 +45,7 @@ For example, if you weigh 70kg (around 154 pounds) and are 1.73m (around 5 feet 
 2. The BMI calculator may not be suitable if you think you have an eating disorder or are being treated for one. Ask a health practitioner for advice.
 
 3. If you are pregnant, use your pre-pregnancy weight when calculating your BMI.
+
+Flowchart: https://drive.google.com/file/d/1VFpxGZCmq55U2OCC_KNqprJrkemmjs7x/view?usp=drive_link
+
+![View Graph](https://github.com/Som-diba/Body_Mass_Index_Calculator/blob/main/BMI_Calculator_ReDI_Project.jpg)
