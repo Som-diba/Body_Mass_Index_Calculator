@@ -3,6 +3,12 @@
 
 This is a Body Mass Index (BMI) Calculator. The Body Mass Index of an individual is a numerial value or measure that uses the height and the weight to work out and access whether the individual has a healthy body weight relative to their height.
 
+**The Home Page**
+
+The home page houses the navigation section (English-calculator, Metrics-Calculator, Cunsulting, Fitness Planning, Meal Planning ) the calcutalator, the consulting section, Fitness Planning section, Meal Planning section and Contact us section.
+
+Clicking on these various options takes you to their different pages where different information with regards to the page name can be gotten.
+
 **Who can use the calculator**
 
 The BMI calculator is suitable for adults from 18 years old and over.
